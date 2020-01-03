@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SinavOtomasyonuModelStoreContainer" CdmEntityContainer="SinavOtomasyonuEntities">
+    <EntitySetMapping Name="Tbl_İstatistik">
+      <EntityTypeMapping TypeName="SinavOtomasyonuModel.Tbl_İstatistik">
+        <MappingFragment StoreEntitySet="Tbl_İstatistik">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SoruID" ColumnName="SoruID" />
+          <ScalarProperty Name="SinavID" ColumnName="SinavID" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Kategoriler">
+      <EntityTypeMapping TypeName="SinavOtomasyonuModel.Tbl_Kategoriler">
+        <MappingFragment StoreEntitySet="Tbl_Kategoriler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+          <ScalarProperty Name="BasariOrani" ColumnName="BasariOrani" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Kisi">
+      <EntityTypeMapping TypeName="SinavOtomasyonuModel.Tbl_Kisi">
+        <MappingFragment StoreEntitySet="Tbl_Kisi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="kullaniciAdi" ColumnName="kullaniciAdi" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="rolID" ColumnName="rolID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_KisiRol">
+      <EntityTypeMapping TypeName="SinavOtomasyonuModel.Tbl_KisiRol">
+        <MappingFragment StoreEntitySet="Tbl_KisiRol">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="rolAdi" ColumnName="rolAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Sinav">
+      <EntityTypeMapping TypeName="SinavOtomasyonuModel.Tbl_Sinav">
+        <MappingFragment StoreEntitySet="Tbl_Sinav">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="SinavNotu" ColumnName="SinavNotu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Sorular">
+      <EntityTypeMapping TypeName="SinavOtomasyonuModel.Tbl_Sorular">
+        <MappingFragment StoreEntitySet="Tbl_Sorular">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Soru" ColumnName="Soru" />
+          <ScalarProperty Name="Secenek1" ColumnName="Secenek1" />
+          <ScalarProperty Name="Secenek2" ColumnName="Secenek2" />
+          <ScalarProperty Name="Secenek3" ColumnName="Secenek3" />
+          <ScalarProperty Name="DogruSecenek" ColumnName="DogruSecenek" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="SoruResmi" ColumnName="SoruResmi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
